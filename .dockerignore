@@ -1,0 +1,8 @@
+**/.idea
+**/.git
+**/vendor
+./docker/config/*
+!./docker/config/.gitignore
+./var/*
+!./var/.gitignore
+.phpunit.result.cache
