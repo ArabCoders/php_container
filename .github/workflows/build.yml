@@ -17,8 +17,7 @@ env:
   GHCR_SLUG: ghcr.io/arabcoders/php_container
 
 jobs:
-  publish_docker_images:
-    needs: unit-tests
+  publish_containers:
     if: github.event_name != 'pull_request'
     runs-on: "ubuntu-latest"
 
