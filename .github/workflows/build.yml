@@ -1,4 +1,4 @@
-name: Build Container Images
+name: Build PHP Container
 
 on:
   push:
