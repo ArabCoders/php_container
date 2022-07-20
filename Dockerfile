@@ -8,5 +8,5 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 RUN mv "${PHP_INI_DIR}/php.ini-production" "${PHP_INI_DIR}/php.ini" && chmod +x /usr/bin/install-php-extensions && \
     sync && install-php-extensions opcache xhprof redis && \
-    apk add --no-cache nginx nano curl procps net-tools iproute2 shadow runuser sqlite redis && \
+    apk add --no-cache nginx nano curl procps net-tools iproute2 shadow runuser sqlite redis gettext bash && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
